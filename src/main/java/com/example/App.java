@@ -57,7 +57,7 @@ public class App {
 
     public static void writeFile(ArrayList<String> names, ArrayList<String> reviews) throws IOException {
         FileWriter myWriter = new FileWriter("allreviews.txt");
-        for (int i=0; i < names.size(); i++) {
+        for (int i=0; i < reviews.size(); i++) {
             String text = reviews.get(i).replaceAll("\n", "");
             myWriter.write(names.get(i) + ", " + text + "\n");
         }
